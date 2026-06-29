@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	background-color: white;
+	padding-block: 28px;
+	padding-inline: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.container{
+	background: #E9E6FA;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	corner-shape: squircle;
+	border-radius: 32px;
+}
+
+.navbar{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.navbar-span{
+	color: #6C4DD3;
+}
+
+.navbar-right{
+	display: flex;
+	gap: 14px;
+}
+
+input{
+	border: none;
+	border-radius: 90px;
+	padding: 6px 8px;
+}
+
+.user-icon{
+	width: 32px;
+	height: 32px;
+	background: white;
+	border-radius: 100%;
+	padding: 4px;
+}
+
+.navbar-links{
+	display: flex;
+	text-decoration: none;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.navbar-links li{
+	list-style: none
+}
+
+.navbar-links li a{
+	text-decoration: none;
+	color: black;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	font-size: 12px;
+	border-radius: 26px;
+	corner-shape: squircle; 
+	border: 1.4px solid #6C4DD3;
+	height: 56px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-links li a:hover{
+	background-color: white;
+	transition-duration: .6s;
+}
+
+.navbar-links li div{
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+}
+
+.home-section{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-inline: 46px;
+}
+
+.home-title{
+	display: flex;
+	gap: 12px;
+}
+
+.home-section p {
+	font-size: 14px;
+}
+
+.home-icon-title{
+	width: 24px;
+}
+
+.container-data li div {
+	text-decoration: none;
+	color: black;
+	flex-direction: column;
+	display: flex;
+	gap: 8px;
+	height: 102px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-block: 20px;
+	padding-inline:20px; 
+	font-size: 12px;
+	border-radius: 26px;
+	corner-shape: squircle; 
+	background-color: #E9E6FA;
+
+	/* EFECTO HIGH-END PARA LAS TARJETAS */
+.container-data li div {
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer;
+}
+
+.container-data li div:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta */
+    box-shadow: 0 10px 20px rgba(108, 77, 211, 0.15); /* Crea una sombra suave morada */
+    background-color: #F1EDFF; /* Cambia a un lavanda un poquito más claro */
+}
+}
+
+.container-data li{
+	list-style: none;
+}
+
+.container-data li div p{
+	font-size: 12px;
+}
+
+.container-data{
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 12px;
+}
+
+.content-container{
+	display: flex;
+	align-items: center;
+	gap: 44px;
+	text-align: center;
+}
+
+.container-description{
+	color: #6C4DD3;
+	font-weight: bold;
+}
+
+.footer-container{
+	display: flex;
+	width: 100%;
+	padding-block: 24px;
+	padding-inline: 32px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #E9E6FA;
+}
+
+.footer-container-left{
+	display: flex;
+	gap: 24px;
+}
+
+.footer-container div ul{
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.footer-container div ul li{
+	list-style: none;
+}
+
+.footer-container-right{
+	display: flex;
+	gap: 12px;
+}
+
+.footer-title{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.footer-title span{
+	color: #6C4DD3;
+}
+
+.footer-container-right svg{
+	width: 28px;
+	color: white;
+}
+
+.footer-container-right svg path{
+	fill: white;
+}
+
+.footer-container-icon{
+	padding: 4px;
+	background-color: black;
+	color: white;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+}
+
+* PERSONALIZACIÓN DE SELECCIÓN DE TEXTO */
+::selection {
+    background-color: #6C4DD3; /* El morado de su paleta */
+    color: white;
+}
+
+/* EFECTO HOVER DE ALTA GAMA PARA LAS TARJETAS */
+.container-data li div {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, background-color 0.3s ease !important;
+    cursor: pointer;
+}
+
+.container-data li div:hover {
+    transform: translateY(-6px); /* Hace el micro-levante sutil hacia arriba */
+    box-shadow: 0 12px 24px rgba(108, 77, 211, 0.12); /* Agrega una sombra lavanda muy suave abajo */
+    background-color: #F3EFFF; /* Aclara un tinte el fondo morado para dar sensación de brillo */
+}
+
+/* PERSONALIZACIÓN DE SELECCIÓN DE TEXTO (UX) */
+::selection {
+    background-color: #6C4DD3; /* El morado de su paleta */
+    color: white;
+}
